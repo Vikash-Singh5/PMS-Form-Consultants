@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMS Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="coding.js"></script>
+</head>
+<body>
+    <div class="heading">
+        <img src="logo.png" alt="">
+        <img src="Electric.png" alt="">
+        <h1><strong>Goal Sheet</strong></h1>
+        <p>(Performance Year 2024-25)</p>
+    </div>
+    
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfEWz3O5onSoFknBzloTW78wsHEsfsyxE2C5JkBIHpiinPqwg/formResponse">
+                  
+
+        <div class="description">
+            <h2>This Goal Sheet is divided into 4 parts</h2>
+                <p><strong>Part A: </strong><u>KRA(Key Responsibility Area)</u></p>
+                <p><strong>Part B: </strong><u>New Initiatives</u></p>
+                <p><strong>Part C: </strong><u>Competency Analysis</u></p>
+                <p><strong>Part D: </strong><u>Training & Suggestions</u></p>
+        </div>
+        
+        <div class="c1">
+            <label for="ecSearch">Search E.C. No:</label>
+            <input type="text" id="ecSearch" onkeyup="filterOptions()" placeholder="Type to search...">
+        </div>
+        
+        <div class="c1">
+            <label for="entry.459367307">E.C No</label>
+            <select id="entry.459367307" name="entry.459367307" onchange="fillDetails()">
+                <option value="">Select E.C. No...</option>
+                <option value="C00009">C00009</option>
+                <option value="C00018">C00018</option>
+                <option value="C00020">C00020</option>
+                <option value="C00021">C00021</option>
+                <option value="C00029">C00029</option>
+                <option value="C00031">C00031</option>
+                <option value="C00036">C00036</option>
+                <option value="C00041">C00041</option>
+                <option value="C00042">C00042</option>
+                <option value="C00043">C00043</option>
+                <option value="C00044">C00044</option>
+                <option value="C00045">C00045</option>
+                <option value="C00046">C00046</option>
+                <option value="C00049">C00049</option>
+                <option value="C00027">C00027</option>
+                <option value="INT003">INT003</option>
+                
+                
+                
+            </select>
+        </div>
+        <div class="c2">
+            <label for="entry.1901190079">Name</label>
+            <input type="text" id="entry.1901190079" name="entry.1901190079" readonly>
+        </div>
+        <div class="c3">
+            <label for="entry.1673632614">Department</label>
+            <input type="text" id="entry.1673632614" name="entry.1673632614" readonly>
+            
+        </div>
+        <div class="c4">
+            <label for="entry.1269000508">Email ID</label>
+            <input type="email" id="entry.1269000508" name="entry.1269000508" readonly>
+        </div>
+
+        <div class="disclaimer">
+            <hr>
+            <h2>A: KRA- Key Responsibilty Area (Max.Marks 60)</h2>
+            <p>KRAs have to be SMART:</p>
+            <ul>
+                <li><strong>S:</strong> Specific.</li>
+                <li><strong>M:</strong> Measurable</li>
+                <li><strong>A:</strong> Achievable</li>
+                <li><strong>R:</strong> Relevant.</li>
+                <li><strong>T :</strong>Timebound.</li>
+            </ul>
+            <p><strong>Note:</strong> 5 KRAs are mandatory to be filled.</p>
+        </div>
+        <br>
+        <div class="row1">
+            <!-- <label for="entry.1745973834">KRA 1*</label>
+            <input type="text" name="entry.1745973834" data-category="KRA"> -->
+            <label for="entry.1745973834">KRA 1*</label>
+            <textarea name="entry.1745973834" id="entry_1745973834" class="auto-resize-input" data-category="KRA"></textarea>
+
+            <!-- <label for="entry.1037102255">KPI</label>
+            <input type="text" name="entry.1037102255" data-category="KRA"> -->
+            <label for="entry.1037102255">KPI</label>
+            <textarea name="entry.1037102255" id="entry_1037102255" class="auto-resize-input" data-category="KRA"></textarea>
+
+            <label for="entry.365633491">Target</label>
+            <input type="number" name="entry.365633491" data-category="KRA">
+            <label for="entry.1210358153">Time of completion</label>
+            <input type="date" name="entry.1210358153" data-category="KRA">
+            <label for="entry.2154909">Weightage</label>
+            <input type="number" name="entry.2154909" data-category="KRA">
+        </div>
+        <div class="row2">
+            <label for="entry.1031255313">KRA 2*</label>
+            <textarea name="entry.1031255313" id="entry_1031255313" class="auto-resize-input" data-category="KRA"></textarea>
+            <label for="entry.2134247265">KPI</label>
+            <textarea name="entry.2134247265" id="entry_2134247265" class="auto-resize-input" data-category="KRA"></textarea>
+            <label for="entry.674224201">Target</label>
+            <input type="number" name="entry.674224201" data-category="KRA">
+            <label for="entry.1427403346">Time of completion</label>
+            <input type="date" name="entry.1427403346" data-category="KRA">
+            <label for="entry.1851935999">Weightage</label>
+            <input type="number" name="entry.1851935999" data-category="KRA">
+        </div>
+        <div class="row3">
+            <label for="entry.766880644">KRA 3*</label>
+            <textarea name="entry.766880644" id="entry_766880644" class="auto-resize-input" data-category="KRA"></textarea>
+            <label for="entry.123105621">KPI</label>
+            <textarea name="entry.123105621" id="entry_123105621" class="auto-resize-input" data-category="KRA"></textarea>
+            <label for="entry.434389775">Target</label>
+            <input type="number" name="entry.434389775" data-category="KRA">
+            <label for="entry.901371930">Time of completion</label>
+            <input type="date" name="entry.901371930" data-category="KRA">
+            <label for="entry.80525495">Weightage</label>
+            <input type="number" name="entry.80525495" data-category="KRA">
+            
+        </div>
+        <div class="row4">
+            <label for="entry.737215426">KRA 4*</label>
+            <textarea name="entry.737215426" id="entry_737215426" class="auto-resize-input" data-category="KRA"></textarea>
+            <label for="entry.775428908">KPI</label>
+            <textarea name="entry.775428908" id="entry_775428908" class="auto-resize-input" data-category="KRA"></textarea>
+            <label for="entry.2038599087">Target</label>
+            <input type="number" name="entry.2038599087" data-category="KRA">
+            <label for="entry.1247986183">Time of completion</label>
+            <input type="date" name="entry.1247986183" data-category="KRA">
+            <label for="entry.1353547461">Weightage</label>
+            <input type="number" name="entry.1353547461" data-category="KRA">
+            
+        </div>
+        <div class="row5">
+            <label for="entry.1203302399">KRA 5*</label>
+            <textarea name="entry.1203302399" id="entry_1203302399" class="auto-resize-input" data-category="KRA"></textarea>
+            <label for="entry.164661340">KPI</label>
+            <textarea name="entry.164661340" id="entry_164661340" class="auto-resize-input" data-category="KRA"></textarea>
+            <label for="entry.1921533468">Target</label>
+            <input type="number" name="entry.1921533468" data-category="KRA">
+            <label for="entry.1468489731">Time of completion</label>
+            <input type="date" name="entry.1468489731" data-category="KRA">
+            <label for="entry.105008738">Weightage</label>
+            <input type="number" name="entry.105008738" data-category="KRA">
+            
+        </div>
+        <div class="row6">
+            <label for="entry.1566217746">KRA 6</label>
+            <textarea name="entry.1566217746" id="entry_1566217746" class="auto-resize-input" data-category="KRA"></textarea>
+            <label for="entry.468178852">KPI</label>
+            <textarea name="entry.468178852" id="entry_468178852" class="auto-resize-input" data-category="KRA"></textarea>
+            <label for="entry.1555159742">Target</label>
+            <input type="number" name="entry.1555159742" data-category="KRA">
+            <label for="entry.1741575890">Time of completion</label>
+            <input type="date" name="entry.1741575890" data-category="KRA">
+            <label for="entry.542858498">Weightage</label>
+            <input type="number" name="entry.542858498" data-category="KRA">
+            
+        </div>
+        <div class="row7">
+            <label for="entry.738275660">KRA 7</label>
+            <textarea name="entry.738275660" id="entry_738275660" class="auto-resize-input" data-category="KRA"></textarea>
+            <label for="entry.733630349">KPI</label>
+            <textarea name="entry.733630349" id="entry_733630349" class="auto-resize-input" data-category="KRA"></textarea>
+            <label for="entry.234421643">Target</label>
+            <input type="number" name="entry.234421643" data-category="KRA">
+            <label for="entry.129263413">Time of completion</label>
+            <input type="date" name="entry.129263413" data-category="KRA">
+            <label for="entry.495272561">Weightage</label>
+            <input type="number" name="entry.495272561" data-category="KRA">
+            
+        </div>
+        <div class="row8">
+            <label for="entry.2021578509">KRA 8</label>
+            <textarea name="entry.2021578509" id="entry_2021578509" class="auto-resize-input" data-category="KRA"></textarea>
+            <label for="entry.1562801543">KPI</label>
+            <textarea name="entry.1562801543" id="entry_1562801543" class="auto-resize-input" data-category="KRA"></textarea>
+            <label for="entry.1526274040">Target</label>
+            <input type="number" name="entry.1526274040" data-category="KRA">
+            <label for="entry.71469814">Time of completion</label>
+            <input type="date" name="entry.71469814" data-category="KRA">
+            <label for="entry.1894423910">Weightage</label>
+            <input type="number" name="entry.1894423910" data-category="KRA">
+            
+        </div>
+        <div class="row9">
+            <label for="entry.1221848414">KRA 9</label>
+            <textarea name="entry.1221848414" id="entry_1221848414" class="auto-resize-input" data-category="KRA"></textarea>
+            <label for="entry.950069805">KPI</label>
+            <textarea name="entry.950069805" id="entry_950069805" class="auto-resize-input" data-category="KRA"></textarea>
+            <label for="entry.2022279161">Target</label>
+            <input type="number" name="entry.2022279161" data-category="KRA">
+            <label for="entry.420367930">Time of completion</label>
+            <input type="date" name="entry.420367930" data-category="KRA">
+            <label for="entry.1896290339">Weightage</label>
+            <input type="number" name="entry.1896290339" data-category="KRA">
+            
+        </div>
+        <div class="row10">
+            <label for="entry.1437491574">KRA 10</label>
+            <textarea name="entry.1437491574" id="entry_1437491574" class="auto-resize-input" data-category="KRA"></textarea>
+            <label for="entry.2061749093">KPI</label>
+            <textarea name="entry.2061749093" id="entry_2061749093" class="auto-resize-input" data-category="KRA"></textarea>
+            <label for="entry.2087404391">Target</label>
+            <input type="number" name="entry.2087404391" data-category="KRA">
+            <label for="entry.893550287">Time of completion</label>
+            <input type="date" name="entry.893550287" data-category="KRA">
+            <label for="entry.1179970253">Weightage</label>
+            <input type="number" name="entry.1179970253" data-category="KRA">
+            
+        </div>
+        <div class="total">
+            <label for="entry.1106801050">Total Weightage(auto generated field)</label>
+            <input type="number" name="entry.1106801050" data-category="KRA" readonly>
+            
+        </div>
+        <div class="disclaimer">
+            <hr>
+            <h2>B: New Initiatives (Max.Marks 20)</h2>
+            <p><strong>Note: </strong>1 Initiative & 1 Cost Saving Initiative is mandatory to be filled.</p>
+        </div>
+        <div class="row11">
+            <label for="entry.671827882">Initiative 1*</label>
+            <input type="text" name="entry.671827882" data-category="Initiative">
+            <label for="entry.1543073645">KPI</label>
+            <input type="text" name="entry.1543073645" data-category="Initiative">
+            <label for="entry.1529736657">Target</label>
+            <input type="number" name="entry.1529736657" data-category="Initiative">
+            <label for="entry.1463344340">Time of completion</label>
+            <input type="date" name="entry.1463344340" data-category="Initiative">
+            <label for="entry.577462297">Weightage</label>
+            <input type="number" name="entry.577462297" data-category="Initiative">
+            
+        </div>
+        <div class="row12">
+            <label for="entry.132917601">Initiative 2*</label>
+            <label for="entry.132917601" class="sub-label">(Cost Saving)</label>
+            <input type="text" name="entry.132917601" data-category="Initiative" class="unique-style">
+            <label for="entry.1243770860">KPI</label>
+            <input type="text" name="entry.1243770860" data-category="Initiative">
+            <label for="entry.812056746">Target</label>
+            <input type="number" name="entry.812056746" data-category="Initiative">
+            <label for="entry.895054325">Time of completion</label>
+            <input type="date" name="entry.895054325" data-category="Initiative">
+            <label for="entry.237334848">Weightage</label>
+            <input type="number" name="entry.237334848" data-category="Initiative" readonly>
+            
+        </div>
+        <div class="row13">
+            <label for="entry.1489888761">Initiative 3</label>
+            <input type="text" name="entry.1489888761" data-category="Initiative">
+            <label for="entry.1672117607">KPI</label>
+            <input type="text" name="entry.1672117607" data-category="Initiative">
+            <label for="entry.488189513">Target</label>
+            <input type="number" name="entry.488189513" data-category="Initiative">
+            <label for="entry.432086244">Time of completion</label>
+            <input type="date" name="entry.432086244" data-category="Initiative">
+            <label for="entry.1501775503">Weightage</label>
+            <input type="number" name="entry.1501775503" data-category="Initiative">
+            
+        </div>
+        <div class="total">
+            <label for="entry.2003645448">Total Weightage(auto generated field)</label>
+            <input type="number" name="entry.2003645448" data-category="Initiative" readonly>
+        </div>
+        <div class="disclaimer">
+            <hr>
+            <h2>C: Individual Competency Analysis (Max.Marks 20)</h2>
+            <p><strong>Note: </strong>Kindly select the competence level where you would like to see yourself at the end of current performance year.</p>
+            <ul>
+                <li><strong>Directed:</strong> Follow/does as much as told- 0.5 marks</li>
+                <li><strong>Skilled:</strong> Can independently work but requires direction- 1 marks</li>
+                <li><strong>Autonomous:</strong> Can work independently without any supervision, does accurate job- 1.5 marks</li>
+                <li><strong>Role Model:</strong> Able to set benchmarks, can handle multiple roles & has attitude of handling multiple roles- 2 marks</li>
+            </ul>
+        </div>
+        
+        <div class="row14">
+            <label for="entry.1870845644">1) Result Orientation- (Display courage, energy & drive to succeed, finds ways to accelerate goal attainment, punctuality, meeting deadlines)</label>
+            <select name="entry.1870845644" data-category="Questions" class="question-select">
+                <option value="">Choose</option>
+                <option value="Directed">Directed</option>
+                <option value="Skilled">Skilled</option>
+                <option value="Autonomous">Autonomous</option>
+                <option value="Role Model">Role Model</option>
+            </select>
+        </div>
+        
+        <br>
+        <br>
+        
+        <div class="row15">
+            <label for="entry.1486923202">2) Communicates Effectively-(Able to speak, read & write and good body language)</label>
+            <select name="entry.1486923202" data-category="Questions" class="question-select">
+                <option value="">Choose</option>
+                <option value="Directed">Directed</option>
+                <option value="Skilled">Skilled</option>
+                <option value="Autonomous">Autonomous</option>
+                <option value="Role Model">Role Model</option>
+            </select>
+        </div>
+        <br>
+        <br>
+
+        <div class="row16">
+            <label for="entry.519914505">3) Initiatives- (Generate new ideas and does different more than regular and non-regular work)
+            </label>
+            <select name="entry.519914505" data-category="Questions" class="question-select">
+                <option value="">Choose</option>
+                <option value="Directed">Directed</option>
+                <option value="Skilled">Skilled</option>
+                <option value="Autonomous">Autonomous</option>
+                <option value="Role Model">Role Model</option>
+            </select>
+        </div>
+        <br>
+        <br>
+
+        <div class="row17">
+            <label for="entry.488758339">4) Accountability & Adaptability-(Handles day-to-day work challenges confidently, holds self-accountable for assigned responsibilities)</label>
+            <select name="entry.488758339" data-category="Questions" class="question-select">
+                <option value="">Choose</option>
+                <option value="Directed">Directed</option>
+                <option value="Skilled">Skilled</option>
+                <option value="Autonomous">Autonomous</option>
+                <option value="Role Model">Role Model</option>
+            </select>
+        </div>
+        <br>
+        <br>
+
+        <div class="row18">
+            <label for="entry.1847120298">5) Customer Responsiveness (Internal & External)-(Understand customers need and try to solve problem)</label>
+            <select name="entry.1847120298" data-category="Questions" class="question-select">
+                <option value="">Choose</option>
+                <option value="Directed">Directed</option>
+                <option value="Skilled">Skilled</option>
+                <option value="Autonomous">Autonomous</option>
+                <option value="Role Model">Role Model</option>
+            </select>
+        </div>
+        <br>
+        <br>
+
+        <div class="row19">
+            <label for="entry.72134051">6) Planning & Goal Setting-(Develops plan including objectives & priorities objectives, Sets realistic steps and timeframes)</label>
+            <select name="entry.72134051" data-category="Questions" class="question-select">
+                <option value="">Choose</option>
+                <option value="Directed">Directed</option>
+                <option value="Skilled">Skilled</option>
+                <option value="Autonomous">Autonomous</option>
+                <option value="Role Model">Role Model</option>
+            </select>
+        </div>
+        <br>
+        <br>
+
+        <div class="row20">
+            <label for="entry.140055634">7) Creativity & Innovation-(Is s/he creative and think differently)</label>
+            <select name="entry.140055634" data-category="Questions" class="question-select">
+                <option value="">Choose</option>
+                <option value="Directed">Directed</option>
+                <option value="Skilled">Skilled</option>
+                <option value="Autonomous">Autonomous</option>
+                <option value="Role Model">Role Model</option>
+            </select>
+        </div>
+        <br>
+        <br>
+
+        <div class="row21">
+            <label for="entry.1552770816">8) Problem Solving & Decision Making-(Has a problem-solving ability and root cause analysis)</label>
+            <select name="entry.1552770816" data-category="Questions" class="question-select">
+                <option value="">Choose</option>
+                <option value="Directed">Directed</option>
+                <option value="Skilled">Skilled</option>
+                <option value="Autonomous">Autonomous</option>
+                <option value="Role Model">Role Model</option>
+            </select>
+        </div>
+        <br>
+        <br>
+
+        <div class="row22">
+            <label for="entry.1499607518">9) Interpersonal Skills-(Develop rapport, good relations and foster teamwork)</label>
+            <select name="entry.1499607518" data-category="Questions" class="question-select">
+                <option value="">Choose</option>
+                <option value="Directed">Directed</option>
+                <option value="Skilled">Skilled</option>
+                <option value="Autonomous">Autonomous</option>
+                <option value="Role Model">Role Model</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <div class="row23">
+            <label for="entry.965190142">10) Teamwork-(Ability to work independently with and without supervision and as a part of team)</label>
+            <select name="entry.965190142" data-category="Questions" class="question-select">
+                <option value="">Choose</option>
+                <option value="Directed">Directed</option>
+                <option value="Skilled">Skilled</option>
+                <option value="Autonomous">Autonomous</option>
+                <option value="Role Model">Role Model</option>
+            </select>
+        </div>
+        <br>    
+        <br>
+        <span id="totalMarksContainer">
+            My Expected Competence Number is : <span id="totalMarks"></span>
+        </span>
+
+        <br>
+
+        <div class="disclaimer">
+            <hr>
+            <h2>D: Trainings & Suggestions</h2>
+            <p><strong>Note: </strong>Both Training identified & one Suggestion is required to fill.</p>
+        </div>
+        <div class="row24">
+            <label for="entry.977353501">Training Identified 1</label>
+            <select name="entry.977353501" data-category="Initiative">
+                <option value="">Choose</option>
+                <option value="PPAP">PPAP</option>
+                <option value="7QC tools">7QC tools</option>
+                <option value="Train the Trainer">Train the Trainer</option>
+                <option value="FMEA">FMEA</option>
+                <option value="Business Etiquettes">Business Etiquettes</option>
+                <option value="APQP">APQP</option>
+                <option value="GD&T">GD&T</option>
+                <option value=""Internal Auditor">"Internal Auditor</option>
+                <option value="IATF 16949"">IATF 16949"</option>
+                <option value="SPC">SPC</option>
+                <option value="8D,RCA,5W1H,Problem Solving, 5S">8D,RCA,5W1H,Problem Solving, 5S</option>
+                <option value="IATF16949">IATF16949</option>
+                <option value="4M Audit Refresher">4M Audit Refresher</option>
+                <option value="MSA">MSA</option>
+                <option value="GD&T">GD&T</option>
+                <option value="IATF16949">IATF16949</option>
+                <option value="Gauge R&R">Gauge R&R</option>
+                <option value="VAVE">VAVE</option>
+                <option value="Ansys(FEA,Rm-XPRT,Maxwell)">Ansys(FEA,Rm-XPRT,Maxwell)</option>
+                <option value="Communication Skill">Communication Skill</option>
+                <option value="Leadership">Leadership</option>
+                <option value="Inter personnel skills">Inter personnel skills</option>
+                <option value="MSA">MSA</option>
+                <option value="PLC basics">PLC basics</option>
+                <option value="Root cause analysis">Root cause analysis</option>
+                <option value="FMEA">FMEA</option>
+                <option value="DOE">DOE</option>
+                <option value="Presentation skills">Presentation skills</option>
+                <option value="Team Building">Team Building</option>
+                <option value="SAP">SAP</option>
+                <option value="Advanced Excel and integration with chatgpt">Advanced Excel and integration with chatgpt</option>
+                <option value="Advanced Excel">Advanced Excel</option>
+                <option value="Communication & Personality Development">Communication & Personality Development</option>
+                <option value="MS-Powerpoint">MS-Powerpoint</option>
+                <option value="GST">GST</option>
+                <option value="POSH">POSH</option>
+                <option value="Fundamentals & manufacturing of starter motor armature">Fundamentals & manufacturing of starter motor armature</option>
+                <option value="DC machine working principles">DC machine working principles</option>
+                <option value="Fundamentals & manufacturing of solenoid switch">Fundamentals & manufacturing of solenoid switch</option>
+                <option value="First Aid Training">First Aid Training</option>
+                <option value="Negotiation & Conflict Resolution">Negotiation & Conflict Resolution</option>
+                <option value="Fire Fighting Training">Fire Fighting Training</option>
+                <option value="Time Management is Life Management">Time Management is Life Management</option>
+                <option value="Communication Skills and Corporate Etiquette">Communication Skills and Corporate Etiquette</option>
+                <option value="Business Writing Email Etiquette, Strategies and Techniques">Business Writing Email Etiquette, Strategies and Techniques</option>
+                <option value="Power BI- MIS report & Data Analysis">Power BI- MIS report & Data Analysis</option>
+                <option value="Advance Excel">Advance Excel</option>
+                <option value="Awareness Training on ISO standards">Awareness Training on ISO standards</option>
+                <option value="Internal Auditor Training">Internal Auditor Training</option>
+                <option value="STAR -Level 1">STAR -Level 1</option>
+                <option value="STAR-Level 2">STAR-Level 2</option>
+            </select>
+        </div>
+        <br>
+        <div class="row25">
+            <label for="entry.2020446260">Training Identified 2</label>
+            <input type="text" name="entry.2020446260" data-category="Initiative">
+        </div>
+
+        <input type="checkbox" id="agreeCheckbox">
+        <label for="agreeCheckbox" style="display: inline;">I have checked all the details filled by me thoroughly and agree to submit the form</label>
+
+
+        <!-- <div class="suggestions_form">
+            <h2>Suggestions</h2>
+            <p><strong>Note: </strong>Please note that minimum 2 suggestions are required to be submitted in a performance. </p>
+            <p>To submit your suggestions, please click the below link:</p>
+            <a href="https://forms.gle/EANYBuxpNUujngeGA" style="color: azure;">Click here to submit suggestions.</a>
+        </div> -->
+        <br>
+        <br>
+        <button type="submit">Submit Form</button>
+        <!-- <button type="button" onclick="calculatetotalWeightage()">Calculate total Weightage</button> -->
+        
+    </form>
+</body>
+</html>
+
+

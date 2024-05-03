@@ -1,0 +1,465 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dfe8dc;
+    color: rgba(6, 97, 202, 0.87);
+    
+}
+
+#totalMarksContainer {
+
+    color: black;
+    font-size: 20px;
+}
+
+
+
+
+textarea {
+    resize: none;
+    transition: width 0.3s ease;
+    height: 30px;
+    border-radius: 6px;
+    width: 150px;
+    margin-left: 8px;
+    border: 2px solid #152887;
+  }
+  
+  textarea.expanded {
+    width: 300px; /* Adjust width as needed */
+  }
+  
+
+
+.heading img:first-child {
+    margin-left: 5px;
+    margin-top: -30px;
+    padding: 0px 0px 10px 0px;
+}
+
+.heading img:nth-child(2) {
+    margin-left: 900px;
+    margin-bottom: 38px;
+    padding: 0px 0px 5px 0px;
+}
+
+.heading h1 {
+    margin-top: -140px;
+}
+
+
+@keyframes glow {
+    0% { text-shadow: 0 0 10px rgb(255, 0, 0); }
+    50% { text-shadow: 0 0 20px rgb(0, 255, 0); }
+    100% { text-shadow: 0 0 30px rgb(0, 0, 255); }
+}
+
+.heading {
+    animation: glow 1.5s infinite alternate;
+}
+
+hr {
+    border-color:black;
+    font-weight: bolder;
+    margin-top: 50px;
+}
+
+
+
+.row12 .sub-label {
+    margin-top: 30px;
+    margin-left: -140px;
+}
+
+.disclaimer {
+    margin-top: -20px;
+}
+
+.disclaimer p {
+    font-size: 18px;
+}
+
+.row12 .unique-style {
+    margin-left: -3px;
+}
+
+.heading {
+    text-align: center; 
+}
+
+select {
+    position: relative;
+    left: 120px;
+    top: -30px;
+    
+    padding: 10px 5px 5px 5px;
+    border: 2px solid #152887;
+    border-radius: 5px;
+}
+select:hover{
+    background-color: #aced9a;
+    color: black;
+}
+
+select[data-category="Questions"] {
+    position: relative;
+    left: 180px;
+    top: 10px;
+    width: 150px;
+    padding: 10px 5px 5px 5px;
+    border: 2px solid #152887;
+    border-radius: 5px;
+}
+
+select[data-category="Initiative"] {
+        position: relative;
+        left: 10px;
+        top: -7px;
+        padding: 10px 5px 5px 5px;
+        border: 2px solid #152887;
+        border-radius: 5px;
+        width: 155px;
+}
+
+ .c1,
+ .c2,
+ .c3 {
+     display: inline-block;
+     width: 20%;
+     vertical-align: top;
+     margin-top: 50px;
+ }
+
+ .c2,
+ .c3 {
+     /* margin-left: 10px; */
+     margin-right: auto;
+ }
+
+
+
+.c1 input[type="text"] {
+    position: relative;
+    left: 110px;
+    top: -30px;
+    width: 125px;
+    margin-left: 50px;
+}
+
+.c2 input[type="text"] {
+    position: relative;
+    left: 110px;
+    top: -30px;
+    width: 125px;
+}
+
+.c3 input[type="text"] {
+    position: relative;
+    left: 110px;
+    top: -30px;
+    width: 125px;
+}
+.c4 input[type="email"] {
+    position: relative;
+    left: 150px;
+    top: -30px;
+    width: 180px;
+    color: black;
+}
+
+label[for="entry.1566217746"],
+label[for="entry.738275660"],
+label[for="entry.2021578509"],
+label[for="entry.1221848414"] {
+    margin-right: 7px;
+}
+
+label[for="entry.1437491574"] {
+    margin-right: -2px;
+}
+
+label[for="entry.671827882"],
+label[for="entry.132917601"] {
+    margin-right: -7px;
+}
+
+
+
+form {
+    max-width: 100%;
+    margin: 50px auto;
+    margin-top: auto;
+    padding: 20px;
+    background-color: rgba(6, 97, 202, 0.87);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(234, 229, 229, 0.1);
+    color: azure;
+    
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-right: 0px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* for KRA Total */
+label[for="entry.1106801050"] {
+    margin-left: auto; 
+}
+
+/* for Initiative Total */
+label[for="entry.2003645448"] {
+    margin-left: auto;
+}
+
+
+input[type="text"] {
+    width: calc(10% - 10px);
+    padding: 8px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    border: 2px solid #152887;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: inline-block;  
+}
+input[type="number"] {
+    width: calc(10% - 10px);
+    padding: 8px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    border: 2px solid #152887;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: inline-block;  
+}
+input[type="date"] {
+    width: calc(10% - 10px);
+    padding: 8px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    border: 2px solid #152887;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: inline-block;  
+}
+input[type="email"] {
+    width: calc(10% - 10px);
+    padding: 8px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    border: 2px solid #152887;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: inline-block;  
+}
+
+input[type="text"]:hover{
+    background-color: #aced9a;
+    color: black;
+}
+input[type="number"]:hover{
+    background-color: #aced9a;
+    color: black;
+}
+input[type="date"]:hover{
+    background-color: #aced9a;
+    color: black;
+}
+input[type="email"]:hover{
+    background-color: #aced9a;
+    color: black;
+}
+
+.row1,
+.row2,
+.row3,
+.row4,
+.row5,
+.row6,
+.row7,
+.row8,
+.row9,
+.row10,
+.row11,
+.row12,
+.row13
+ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* .row14 [data-category="Q"],
+.row15 [data-category="Q"],
+.row16 [data-category="Q"],
+.row17 [data-category="Q"],
+.row18 [data-category="Q"],
+.row19 [data-category="Q"],
+.row20 [data-category="Q"],
+.row21 [data-category="Q"],
+.row22 [data-category="Q"],
+.row23 [data-category="Q"] {
+    display: flex;
+} */
+
+.row24,
+.row25 {
+    display: flex;
+}
+
+.row14 label,
+.row15 label,
+.row16 label,
+.row17 label,
+.row18 label,
+.row19 label,
+.row20 label,
+.row21 label,
+.row22 label,
+.row23 label {
+    margin-right: auto;
+}
+
+
+.total {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    width: 7%;
+    padding: 15px;
+    background-color: #152887;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button[type="submit"]:hover {
+    background-color: #48ff16;
+    color: black;
+}
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+@media only screen and (max-width: 768px) {
+    form {
+        max-width: 100%; /* Adjust to fit the screen width */
+        padding: 10px; /* Adjust padding for smaller screens */
+        margin-top: auto;
+    }
+
+    label {
+        font-size: 16px; /* Decrease font size for labels */
+    }
+    /* Total Weightage */
+    label[for="entry.2003645448"] {
+        margin-left: 0px;
+    }
+
+    label[for="entry.1106801050"] {
+        margin-left: 0px;
+    }
+
+    .c1 input[type="text"] {
+        position: relative;
+        left: 70px;
+        top: -30px;
+        width: 168px;
+    }
+
+
+    .row12 .sub-label {
+        margin-top: auto;
+        margin-right: 140px;
+    }
+
+.c2 input[type="text"] {
+        position: relative;
+        left: 110px;
+        top: -30px;
+        width: 180px;
+    }
+
+.c3 input[type="text"] {
+        position: relative;
+        left: 110px;
+        top: -30px;
+        width: 180px;
+    }
+
+    input[type="text"] {
+        width: 100%; /* Make inputs full width */
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 20px; /* Increase bottom margin for better spacing */
+    }
+    input[type="number"] {
+        width: 100%; /* Make inputs full width */
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 20px; /* Increase bottom margin for better spacing */
+    }
+    input[type="date"] {
+        width: 100%; /* Make inputs full width */
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 20px; /* Increase bottom margin for better spacing */
+    }
+
+    button[type="submit"] {
+        width: 100%; /* Make button full width */
+    }
+
+    .c1,
+    .c2,
+    .c3 {
+        display:inline;
+    }
+
+    .heading img:first-child {
+        width: 50px;
+        margin-left: -6px;
+        padding-top: 25px;
+    }
+
+    
+    .heading img:nth-child(2) {
+        width: 60px;
+        margin-left: 260px;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+    }
+   
+    .heading h1 {
+        margin-top: -25px;
+        margin-top: -50px;
+    }
+
+    .c4 input[type="email"] {
+        position: relative;
+        left: 101px;
+        top: -30px;
+        width: 180px;
+        color: black;
+    }
+
+    select {
+        left: 110px;
+        width: 180px;
+    }
+
+    textarea {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+      }
+     
+    
+}
+
+
